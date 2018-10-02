@@ -9,8 +9,10 @@ Pod::Spec.new do |s|
 
     s.platform          = :ios
     s.source            = {
-#        :http => "https://jdecew@github.com/Skydio/skydio-sdk-ios/raw/#{s.version}/#{s.version}/SkydioSDK.zip"
-        :git => 'git@github.com:Skydio/skydio-sdk-ios.git', :tag => "x#{s.version}"
+        # TODO: support https once we go public.  Unfotunately, this doesn't play nice with 2-factor github auth
+        # NOTE: We'll have to change the vendored_frameworks to "skydio-sdk-ios-#{s.version}/SkydioSDK.framework"
+        #:http => "https://github.com/Skydio/skydio-sdk-ios/archive/#{s.version}.zip"
+        :git => 'git@github.com:Skydio/skydio-sdk-ios.git', :tag => "#{s.version}"
     }
 
     s.ios.deployment_target = '11.0'
