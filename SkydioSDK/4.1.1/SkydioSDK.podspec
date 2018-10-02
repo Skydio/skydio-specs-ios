@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '11.0'
     s.ios.vendored_frameworks = 'SkydioSDK.framework'
+
+    s.dependency 'SwiftProtobuf', '1.0.3'
 end
