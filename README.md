@@ -1,3 +1,3 @@
 # skydio-specs-ios
 
-CocoaPods Repo for the (private) SkydioSDK.framework
+CocoaPods specs for private Skydio frameworks.
